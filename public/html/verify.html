@@ -1,0 +1,42 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="../js/web3.min.js"></script>
+<script src="../js/main.js"></script>
+
+
+<!------ Include the above in your HEAD tag ---------->
+<body  style="background-color:rgb(197, 213, 218)">
+<br>
+
+<div class="container">    
+    
+    <div id="signupbox" style=" margin-top:150px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title" align="center"><b>Check Status</b></div>
+            </div>  
+            <div class="panel-body" >
+                <form method="post" action=".">
+                    <div id="d_id" class="form-group required">
+                        <label for="tID" class="control-label col-md-4  requiredField">Transaction No:<span class="asteriskField">*</span> </label>
+                        <div class="controls col-md-8 "> 
+                            <input class="input-md textinput textInput form-control" id="tID" name="tID" style="margin-bottom: 10px" type="text" />
+                        </div>
+                    </div>
+                     
+                         <div class=" text-center" align="center">
+                            <button onclick="getDonatedBloodStatus()" type="button" style="background-color: lightblue;" name="button" class="btn login_btn" href="/dashboard">Submit</button>
+                            </div>
+                            
+                    </form>
+
+                 <div  id="message">
+                           
+                        </div>
+            </div>
+        </div>
+    </div> 
+</div>
+    
+</body>  
